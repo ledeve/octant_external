@@ -24,6 +24,8 @@ layout: default
 
     <h1>Octant Aggregates</h1>
 
+    <p>Key stats from Octant epochs 1-5</p>
+
     {% include table_amounts.html %}
 
     {% include table_users.html %}
@@ -39,18 +41,6 @@ layout: default
         <div class="chart-description">
             {% capture content %}
             {% include content/text_1.1.md %}
-            {% endcapture %}
-            {{ content | markdownify }}
-        </div>
-    </div>
-
-    <h2>(1.2) Daily New Users</h2>
-
-    <div class="chart-container">
-        <img src="assets/daily_users.png" alt="Chart Image" class="chart-image">
-        <div class="chart-description">
-            {% capture content %}
-            {% include content/text_1.2.md %}
             {% endcapture %}
             {{ content | markdownify }}
         </div>
@@ -182,21 +172,6 @@ layout: default
 
     <h1>Marketing & Raffle</h1>
     
-    <h2>(3.1) Locks and Participation</h2>
-
-    {% include sankey_diagram.html %}
-
-    <h2>(3.2) Additionality</h2>
-
-    <div class="chart-container">
-        <img src="assets/campaign_monitor.png" alt="Chart Image" class="chart-image">
-        <div class="chart-description">
-            {% capture content %}
-            {% include content/text_3.2.md %}
-            {% endcapture %}
-            {{ content | markdownify }}
-        </div>
-    </div>
 
     <h2>(3.3) Decay Over Time</h2>
 
